@@ -254,7 +254,7 @@
         <ComponentName Value="fbasil"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="74"/>
+        <TopLine Value="73"/>
         <CursorPos X="50" Y="78"/>
         <UsageCount Value="54"/>
         <Loaded Value="True"/>
