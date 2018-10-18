@@ -1,0 +1,62 @@
+object flapanggota: Tflapanggota
+  Left = 246
+  Height = 321
+  Top = 167
+  Width = 536
+  Caption = 'flapanggota'
+  ClientHeight = 321
+  ClientWidth = 536
+  KeyPreview = True
+  OnShow = FormShow
+  LCLVersion = '5.7'
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 536
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 50
+    ClientWidth = 536
+    Color = clHighlight
+    ParentColor = False
+    TabOrder = 0
+    object btCetak: TBitBtn
+      Left = 96
+      Height = 30
+      Top = 8
+      Width = 75
+      Caption = 'Cetak'
+      OnClick = btCetakClick
+      TabOrder = 0
+    end
+    object btKeluar: TBitBtn
+      Left = 256
+      Height = 30
+      Top = 8
+      Width = 75
+      Caption = 'Keluar'
+      OnClick = btKeluarClick
+      TabOrder = 1
+    end
+    object btLihat: TBitBtn
+      Left = 16
+      Height = 30
+      Top = 8
+      Width = 75
+      Caption = 'Lihat'
+      OnClick = btLihatClick
+      TabOrder = 2
+    end
+  end
+  object frPreview1: TfrPreview
+    Left = 0
+    Height = 271
+    Top = 50
+    Width = 536
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 1
+    ScrollBars = ssBoth
+  end
+end

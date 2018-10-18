@@ -1,0 +1,145 @@
+object fsettingsimpanan: Tfsettingsimpanan
+  Left = 287
+  Height = 368
+  Top = 174
+  Width = 671
+  Caption = 'fsettingsimpanan'
+  ClientHeight = 368
+  ClientWidth = 671
+  KeyPreview = True
+  OnShow = FormShow
+  LCLVersion = '5.7'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 224
+    Hint = 'Silahkan Klik Dua Kali Untuk Merubah Data...'
+    Top = 144
+    Width = 671
+    Align = alBottom
+    AlternateColor = clGradientActiveCaption
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'KODE'
+        Width = 100
+        FieldName = 'kode'
+      end    
+      item
+        Title.Caption = 'NAMA'
+        Width = 200
+        FieldName = 'nama'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = 'BAGI HASIL'
+        Width = 80
+        FieldName = 'basil'
+        DisplayFormat = ',0.00;-,0.00'
+      end>
+    DataSource = fsmartbmt.dsdata
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ShowHint = True
+    TabOrder = 3
+    OnDblClick = DBGrid1DblClick
+  end
+  object Label1: TLabel
+    Left = 19
+    Height = 15
+    Top = 22
+    Width = 27
+    Caption = 'Kode'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 19
+    Height = 15
+    Top = 48
+    Width = 32
+    Caption = 'Nama'
+    ParentColor = False
+  end
+  object edkode: TEdit
+    Left = 104
+    Height = 23
+    Top = 19
+    Width = 112
+    MaxLength = 12
+    OnKeyPress = edkodeKeyPress
+    TabOrder = 0
+    Text = 'edkode'
+  end
+  object ednama: TEdit
+    Left = 104
+    Height = 23
+    Top = 45
+    Width = 328
+    OnKeyPress = ednamaKeyPress
+    TabOrder = 1
+    Text = 'ednama'
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 40
+    Top = 103
+    Width = 671
+    Anchors = [akTop, akLeft, akRight]
+    BevelOuter = bvNone
+    ClientHeight = 40
+    ClientWidth = 671
+    Color = clBlue
+    ParentColor = False
+    TabOrder = 2
+    object btSimpan: TBitBtn
+      Left = 16
+      Height = 30
+      Top = 3
+      Width = 75
+      Caption = 'Simpan'
+      OnClick = btSimpanClick
+      TabOrder = 0
+    end
+    object btBatal: TBitBtn
+      Left = 93
+      Height = 30
+      Top = 3
+      Width = 75
+      Caption = 'Batal'
+      OnClick = btBatalClick
+      TabOrder = 1
+    end
+    object btKeluar: TBitBtn
+      Left = 248
+      Height = 30
+      Top = 3
+      Width = 75
+      Caption = 'Keluar'
+      OnClick = btKeluarClick
+      TabOrder = 2
+    end
+  end
+  object Label3: TLabel
+    Left = 19
+    Height = 15
+    Top = 76
+    Width = 52
+    Caption = 'Bagi Hasil'
+    ParentColor = False
+  end
+  object edbasil: TCurrencyEdit
+    Left = 104
+    Height = 23
+    Top = 72
+    Width = 52
+    Alignment = taRightJustify
+    DisplayFormat = ',0.00;-,0.00'
+    MaxLength = 5
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 4
+    Value = 0
+    ZeroEmpty = False
+    OnKeyPress = edbasilKeyPress
+  end
+end

@@ -1,0 +1,59 @@
+object fcaripembiayaan: Tfcaripembiayaan
+  Left = 288
+  Height = 331
+  Top = 157
+  Width = 424
+  Caption = '.:: CARI JENIS PEMBIAYAAN'
+  ClientHeight = 331
+  ClientWidth = 424
+  KeyPreview = True
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '5.7'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 291
+    Hint = 'Silahkan Klik Dua Kali Untuk Merubah Data...'
+    Top = 40
+    Width = 424
+    Align = alBottom
+    AlternateColor = clGradientActiveCaption
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'KODE PEMBIAYAAN'
+        Width = 110
+        FieldName = 'kode'
+      end    
+      item
+        Title.Caption = 'NAMA PEMBIAYAAN'
+        Width = 290
+        FieldName = 'nama'
+      end>
+    DataSource = fsmartbmt.dsproses
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ShowHint = True
+    TabOrder = 0
+    OnDblClick = DBGrid1DblClick
+  end
+  object Label1: TLabel
+    Left = 1
+    Height = 15
+    Top = 12
+    Width = 262
+    Caption = 'Cari Data Pembiayaan dengan Nama Pembiayaan'
+    ParentColor = False
+  end
+  object edcari: TEdit
+    Left = 270
+    Height = 23
+    Top = 9
+    Width = 145
+    OnChange = edcariChange
+    OnKeyPress = edcariKeyPress
+    TabOrder = 1
+    Text = 'edcari'
+  end
+end

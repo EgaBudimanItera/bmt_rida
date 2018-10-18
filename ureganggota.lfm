@@ -1,0 +1,398 @@
+object freganggota: Tfreganggota
+  Left = 255
+  Height = 344
+  Top = 172
+  Width = 774
+  Caption = 'freganggota'
+  ClientHeight = 344
+  ClientWidth = 774
+  OnShow = FormShow
+  LCLVersion = '5.7'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 112
+    Hint = 'Silahkan Klik Dua Kali Untuk Merubah Data...'
+    Top = 232
+    Width = 774
+    Align = alBottom
+    AlternateColor = clGradientActiveCaption
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'NO ANGGOTA'
+        Width = 100
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'NAMA'
+        Width = 200
+        FieldName = 'nama'
+      end    
+      item
+        Title.Caption = 'TEMPAT LAHIR'
+        Width = 100
+        FieldName = 'tempat_lahir'
+      end    
+      item
+        Title.Caption = 'TGL LAHIR'
+        Width = 80
+        FieldName = 'tanggal_lahir'
+        DisplayFormat = 'dd mmm yyyy'
+      end    
+      item
+        Title.Caption = 'JK'
+        Width = 60
+        FieldName = 'jenis_kelamin'
+      end    
+      item
+        Title.Caption = 'AGAMA'
+        Width = 120
+        FieldName = 'agama'
+      end    
+      item
+        Title.Caption = 'PEKERJAAN'
+        Width = 100
+        FieldName = 'pekerjaan'
+      end    
+      item
+        Title.Caption = 'NAMA AYAH'
+        Width = 200
+        FieldName = 'ayah'
+      end    
+      item
+        Title.Caption = 'NAMA IBU'
+        Width = 200
+        FieldName = 'ibu'
+      end    
+      item
+        Title.Caption = 'ALAMAT'
+        Width = 200
+        FieldName = 'alamat'
+      end    
+      item
+        Title.Caption = 'NO HP'
+        Width = 120
+        FieldName = 'no_hp'
+      end>
+    DataSource = fsmartbmt.dsdata
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ShowHint = True
+    TabOrder = 0
+    OnDblClick = DBGrid1DblClick
+  end
+  object Label1: TLabel
+    Left = 19
+    Height = 15
+    Top = 22
+    Width = 65
+    Caption = 'No Anggota'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 19
+    Height = 15
+    Top = 48
+    Width = 32
+    Caption = 'Nama'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 19
+    Height = 15
+    Top = 75
+    Width = 69
+    Caption = 'Tempat Lahir'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 19
+    Height = 15
+    Top = 101
+    Width = 71
+    Caption = 'Tanggal Lahir'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 19
+    Height = 15
+    Top = 127
+    Width = 71
+    Caption = 'Jenis Kelamin'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 19
+    Height = 15
+    Top = 154
+    Width = 38
+    Caption = 'Agama'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 368
+    Height = 15
+    Top = 22
+    Width = 51
+    Caption = 'Pekerjaan'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 368
+    Height = 15
+    Top = 48
+    Width = 62
+    Caption = 'Nama Ayah'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 368
+    Height = 15
+    Top = 75
+    Width = 52
+    Caption = 'Nama Ibu'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 368
+    Height = 15
+    Top = 101
+    Width = 38
+    Caption = 'Alamat'
+    ParentColor = False
+  end
+  object Label11: TLabel
+    Left = 368
+    Height = 15
+    Top = 127
+    Width = 35
+    Caption = 'No Hp'
+    ParentColor = False
+  end
+  object edno: TEdit
+    Left = 104
+    Height = 23
+    Top = 19
+    Width = 112
+    MaxLength = 12
+    OnKeyPress = ednoKeyPress
+    TabOrder = 1
+    Text = 'edno'
+  end
+  object ednama: TEdit
+    Left = 104
+    Height = 23
+    Top = 45
+    Width = 240
+    OnKeyPress = ednamaKeyPress
+    TabOrder = 2
+    Text = 'ednama'
+  end
+  object edtlahir: TEdit
+    Left = 104
+    Height = 23
+    Top = 71
+    Width = 240
+    OnKeyPress = edtlahirKeyPress
+    TabOrder = 3
+    Text = 'edtlahir'
+  end
+  object tgllahir: TDateTimePicker
+    Left = 104
+    Height = 23
+    Top = 97
+    Width = 83
+    CenturyFrom = 1941
+    DateDisplayOrder = ddoDMY
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 4
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    Date = 43372
+    Time = 0.0590230671296013
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+    OnKeyPress = tgllahirKeyPress
+  end
+  object cbjk: TComboBox
+    Left = 104
+    Height = 23
+    Top = 123
+    Width = 83
+    ItemHeight = 15
+    Items.Strings = (
+      'Pria'
+      'Wanita'
+    )
+    OnKeyPress = cbjkKeyPress
+    TabOrder = 5
+    Text = 'cbjk'
+  end
+  object cbagama: TComboBox
+    Left = 104
+    Height = 23
+    Top = 149
+    Width = 144
+    ItemHeight = 15
+    Items.Strings = (
+      'Islam'
+      'Kristen Protestan'
+      'Kristen Katolik'
+      'Budha'
+      'Hindu'
+      'Lainnya'
+    )
+    OnKeyPress = cbagamaKeyPress
+    TabOrder = 6
+    Text = 'cbagama'
+  end
+  object cbpekerjaan: TComboBox
+    Left = 448
+    Height = 23
+    Top = 19
+    Width = 144
+    ItemHeight = 15
+    Items.Strings = (
+      'Wiraswasta'
+      'PNS'
+      'TNI'
+      'Polri'
+      'BUMN'
+      'BUMD'
+      'Karyawan'
+      'Lainnya'
+    )
+    OnKeyPress = cbpekerjaanKeyPress
+    TabOrder = 7
+    Text = 'cbpekerjaan'
+  end
+  object edayah: TEdit
+    Left = 448
+    Height = 23
+    Top = 45
+    Width = 304
+    OnKeyPress = edayahKeyPress
+    TabOrder = 8
+    Text = 'edayah'
+  end
+  object edibu: TEdit
+    Left = 448
+    Height = 23
+    Top = 71
+    Width = 304
+    OnKeyPress = edibuKeyPress
+    TabOrder = 9
+    Text = 'edibu'
+  end
+  object edalamat: TEdit
+    Left = 448
+    Height = 23
+    Top = 97
+    Width = 304
+    OnKeyPress = edalamatKeyPress
+    TabOrder = 10
+    Text = 'edalamat'
+  end
+  object ednohp: TEdit
+    Left = 448
+    Height = 23
+    Top = 123
+    Width = 144
+    MaxLength = 12
+    OnKeyPress = ednohpKeyPress
+    TabOrder = 11
+    Text = 'ednohp'
+  end
+  object Panel1: TPanel
+    Left = -4
+    Height = 36
+    Top = 188
+    Width = 782
+    Anchors = [akTop, akLeft, akRight]
+    BevelOuter = bvNone
+    ClientHeight = 36
+    ClientWidth = 782
+    Color = clBlue
+    ParentColor = False
+    TabOrder = 12
+    object btSimpan: TBitBtn
+      Left = 16
+      Height = 30
+      Top = 3
+      Width = 75
+      Caption = 'Simpan'
+      OnClick = btSimpanClick
+      TabOrder = 0
+    end
+    object btBatal: TBitBtn
+      Left = 93
+      Height = 30
+      Top = 3
+      Width = 75
+      Caption = 'Batal'
+      OnClick = btBatalClick
+      TabOrder = 1
+    end
+    object btKeluar: TBitBtn
+      Left = 248
+      Height = 30
+      Top = 3
+      Width = 75
+      Caption = 'Keluar'
+      OnClick = btKeluarClick
+      TabOrder = 2
+    end
+    object edcari: TEdit
+      Left = 569
+      Height = 23
+      Top = 7
+      Width = 190
+      Anchors = [akTop, akRight]
+      OnChange = edcariChange
+      OnKeyPress = edcariKeyPress
+      TabOrder = 3
+      Text = 'edcari'
+    end
+    object Label12: TLabel
+      Left = 411
+      Height = 15
+      Top = 10
+      Width = 149
+      Anchors = [akTop, akRight]
+      Caption = 'Cari Dengan Nama Anggota'
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Label13: TLabel
+    Left = 368
+    Height = 15
+    Top = 154
+    Width = 58
+    Caption = 'Biaya ADM'
+    ParentColor = False
+  end
+  object edadm: TCurrencyEdit
+    Left = 448
+    Height = 23
+    Top = 149
+    Width = 144
+    Alignment = taRightJustify
+    DisplayFormat = ',0.00;-,0.00'
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 13
+    Value = 0
+    ZeroEmpty = False
+    OnKeyPress = edadmKeyPress
+  end
+end

@@ -1,0 +1,87 @@
+object foutstandingsimbi: Tfoutstandingsimbi
+  Left = 272
+  Height = 366
+  Top = 157
+  Width = 826
+  Caption = 'foutstandingsimbi'
+  ClientHeight = 366
+  ClientWidth = 826
+  KeyPreview = True
+  OnShow = FormShow
+  LCLVersion = '5.7'
+  object Panel1: TPanel
+    Left = 0
+    Height = 52
+    Top = 0
+    Width = 826
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 52
+    ClientWidth = 826
+    Color = clHighlight
+    ParentColor = False
+    TabOrder = 0
+    object btCetak: TBitBtn
+      Left = 520
+      Height = 30
+      Top = 12
+      Width = 75
+      Caption = 'Cetak'
+      OnClick = btCetakClick
+      TabOrder = 0
+    end
+    object btKeluar: TBitBtn
+      Left = 680
+      Height = 30
+      Top = 12
+      Width = 75
+      Caption = 'Keluar'
+      OnClick = btKeluarClick
+      TabOrder = 1
+    end
+    object btLihat: TBitBtn
+      Left = 440
+      Height = 30
+      Top = 12
+      Width = 75
+      Caption = 'Lihat'
+      OnClick = btLihatClick
+      TabOrder = 2
+    end
+    object Label1: TLabel
+      Left = 15
+      Height = 15
+      Top = 17
+      Width = 71
+      Caption = 'Jenis Laporan'
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+    end
+    object cbjenis: TComboBox
+      Left = 99
+      Height = 23
+      Top = 15
+      Width = 197
+      Color = clGradientActiveCaption
+      ItemHeight = 15
+      Items.Strings = (
+        'Outstanding Simpanan (Saldo)'
+        'Outstanding Pembiayaan (Saldo)'
+      )
+      OnChange = cbjenisChange
+      Style = csDropDownList
+      TabOrder = 3
+    end
+  end
+  object frPreview1: TfrPreview
+    Left = 0
+    Height = 314
+    Top = 52
+    Width = 826
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 1
+    ScrollBars = ssBoth
+  end
+end

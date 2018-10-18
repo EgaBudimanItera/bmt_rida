@@ -1,0 +1,226 @@
+object ftranspembiayaan: Tftranspembiayaan
+  Left = 272
+  Height = 414
+  Top = 157
+  Width = 579
+  Caption = 'ftranspembiayaan'
+  ClientHeight = 414
+  ClientWidth = 579
+  KeyPreview = True
+  OnShow = FormShow
+  LCLVersion = '5.7'
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 24
+    Width = 68
+    Caption = 'No Rekening'
+    ParentColor = False
+  end
+  object ednorek: TEdit
+    Left = 127
+    Height = 23
+    Top = 22
+    Width = 112
+    MaxLength = 12
+    OnKeyPress = ednorekKeyPress
+    TabOrder = 0
+    Text = 'ednorek'
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 15
+    Top = 77
+    Width = 32
+    Caption = 'Nama'
+    ParentColor = False
+  end
+  object ednama: TEdit
+    Left = 127
+    Height = 23
+    Top = 74
+    Width = 281
+    Color = clGradientActiveCaption
+    ReadOnly = True
+    TabOrder = 1
+    Text = 'ednama'
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 15
+    Top = 104
+    Width = 38
+    Caption = 'Alamat'
+    ParentColor = False
+  end
+  object edalamat: TEdit
+    Left = 127
+    Height = 23
+    Top = 100
+    Width = 281
+    Color = clGradientActiveCaption
+    ReadOnly = True
+    TabOrder = 2
+    Text = 'edalamat'
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 15
+    Top = 132
+    Width = 65
+    Caption = 'Pembiayaan'
+    ParentColor = False
+  end
+  object edpembiayaan: TEdit
+    Left = 127
+    Height = 23
+    Top = 127
+    Width = 281
+    Color = clGradientActiveCaption
+    ReadOnly = True
+    TabOrder = 3
+    Text = 'edpembiayaan'
+  end
+  object Label5: TLabel
+    Left = 24
+    Height = 15
+    Top = 159
+    Width = 56
+    Caption = 'Sisa Pokok'
+    ParentColor = False
+  end
+  object edsisa: TCurrencyEdit
+    Left = 127
+    Height = 23
+    Top = 154
+    Width = 112
+    Alignment = taRightJustify
+    Color = clGradientActiveCaption
+    DisplayFormat = ',0.00;-,0.00'
+    MaxValue = 0
+    MinValue = 0
+    ReadOnly = True
+    TabOrder = 4
+    Value = 0
+    ZeroEmpty = False
+  end
+  object Label7: TLabel
+    Left = 24
+    Height = 15
+    Top = 184
+    Width = 87
+    Caption = 'Angsuran Pokok'
+    ParentColor = False
+  end
+  object edpokok: TCurrencyEdit
+    Left = 127
+    Height = 23
+    Top = 180
+    Width = 112
+    Alignment = taRightJustify
+    DisplayFormat = ',0.00;-,0.00'
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 5
+    Value = 0
+    ZeroEmpty = False
+    OnKeyPress = edpokokKeyPress
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 43
+    Top = 371
+    Width = 579
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 43
+    ClientWidth = 579
+    Color = clBlue
+    ParentColor = False
+    TabOrder = 6
+    object btSimpan: TBitBtn
+      Left = 16
+      Height = 30
+      Top = 5
+      Width = 75
+      Caption = 'Simpan'
+      OnClick = btSimpanClick
+      TabOrder = 0
+    end
+    object btBatal: TBitBtn
+      Left = 93
+      Height = 30
+      Top = 5
+      Width = 75
+      Caption = 'Batal'
+      OnClick = btBatalClick
+      TabOrder = 1
+    end
+    object btKeluar: TBitBtn
+      Left = 248
+      Height = 30
+      Top = 5
+      Width = 75
+      Caption = 'Keluar'
+      OnClick = btKeluarClick
+      TabOrder = 2
+    end
+  end
+  object Label8: TLabel
+    Left = 24
+    Height = 15
+    Top = 261
+    Width = 60
+    Caption = 'Ketarangan'
+    ParentColor = False
+  end
+  object edketerangan: TEdit
+    Left = 127
+    Height = 23
+    Top = 257
+    Width = 281
+    OnKeyPress = edketeranganKeyPress
+    TabOrder = 7
+    Text = 'edketerangan'
+  end
+  object edkodeanggota: TEdit
+    Left = 127
+    Height = 23
+    Top = 48
+    Width = 112
+    Color = clGradientActiveCaption
+    ReadOnly = True
+    TabOrder = 8
+    Text = 'edkodeanggota'
+  end
+  object Label9: TLabel
+    Left = 24
+    Height = 15
+    Top = 51
+    Width = 76
+    Caption = 'Kode Anggota'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 24
+    Height = 15
+    Top = 210
+    Width = 78
+    Caption = 'Angsuran Basil'
+    ParentColor = False
+  end
+  object edbasil: TCurrencyEdit
+    Left = 127
+    Height = 23
+    Top = 206
+    Width = 112
+    Alignment = taRightJustify
+    DisplayFormat = ',0.00;-,0.00'
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 9
+    Value = 0
+    ZeroEmpty = False
+    OnKeyPress = edbasilKeyPress
+  end
+end

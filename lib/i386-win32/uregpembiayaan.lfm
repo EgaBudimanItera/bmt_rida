@@ -1,0 +1,416 @@
+object fregpembiayaan: Tfregpembiayaan
+  Left = 272
+  Height = 411
+  Top = 157
+  Width = 1001
+  Caption = 'fregpembiayaan'
+  ClientHeight = 411
+  ClientWidth = 1001
+  KeyPreview = True
+  OnShow = FormShow
+  LCLVersion = '5.7'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 211
+    Hint = 'Silahkan Klik Dua Kali Untuk Merubah Data...'
+    Top = 200
+    Width = 1001
+    Align = alBottom
+    AlternateColor = clGradientActiveCaption
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'NO REKENING'
+        Width = 120
+        FieldName = 'norekpembiayaan'
+      end    
+      item
+        Title.Caption = 'KODE ANGGOTA'
+        Width = 0
+        Visible = False
+        FieldName = 'kodeanggota'
+      end    
+      item
+        Title.Caption = 'NAMA ANGGOTA'
+        Width = 0
+        Visible = False
+        FieldName = 'nama'
+      end    
+      item
+        Title.Caption = 'KODE PEMBIAYAAN'
+        Width = 0
+        Visible = False
+        FieldName = 'kodepembiayaan'
+      end    
+      item
+        Title.Caption = 'NAMA PEMBIAYAAN'
+        Width = 150
+        FieldName = 'nama_1'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = 'PLAPOND'
+        Width = 150
+        FieldName = 'pelapon'
+        DisplayFormat = ',0.00;-,0.00'
+      end    
+      item
+        Title.Caption = 'TGL PEMBIAYAAN'
+        Width = 110
+        FieldName = 'tglpembiayaan'
+        DisplayFormat = 'dd mmm yyyy'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = 'JANGKAWAKTU'
+        Width = 100
+        FieldName = 'jwaktu'
+        DisplayFormat = ',0 Bulan'
+      end    
+      item
+        Title.Caption = 'TGL JATUH TEMPO'
+        Width = 110
+        FieldName = 'tgljt'
+        DisplayFormat = 'dd mmm yyyy'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = 'ANGSURAN POKOK'
+        Width = 120
+        FieldName = 'angsuranpokok'
+        DisplayFormat = ',0.00;-,0.00'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = 'ANGSURAN BASIL'
+        Width = 120
+        FieldName = 'angsuranbagihasil'
+        DisplayFormat = ',0.00;-,0.00'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = 'SISA POKOK'
+        Width = 120
+        FieldName = 'sisaplapon'
+        DisplayFormat = ',0.00;-,0.00'
+      end>
+    DataSource = fsmartbmt.dsdata
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 19
+    Height = 15
+    Top = 22
+    Width = 65
+    Caption = 'No Anggota'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 19
+    Height = 15
+    Top = 48
+    Width = 32
+    Caption = 'Nama'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 19
+    Height = 15
+    Top = 74
+    Width = 38
+    Caption = 'Alamat'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 19
+    Height = 15
+    Top = 100
+    Width = 95
+    Caption = 'Kode Pembiayaan'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 19
+    Height = 15
+    Top = 126
+    Width = 100
+    Caption = 'Nama Pembiayaan'
+    ParentColor = False
+  end
+  object ednoanggota: TEdit
+    Left = 128
+    Height = 23
+    Top = 19
+    Width = 112
+    MaxLength = 12
+    OnChange = ednoanggotaChange
+    OnKeyPress = ednoanggotaKeyPress
+    TabOrder = 1
+    Text = 'ednoanggota'
+  end
+  object ednama: TEdit
+    Left = 128
+    Height = 23
+    Top = 45
+    Width = 240
+    Color = clGradientActiveCaption
+    ReadOnly = True
+    TabOrder = 2
+    Text = 'ednama'
+  end
+  object edalamat: TEdit
+    Left = 128
+    Height = 23
+    Top = 71
+    Width = 240
+    Color = clGradientActiveCaption
+    ReadOnly = True
+    TabOrder = 3
+    Text = 'edalamat'
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 40
+    Top = 161
+    Width = 1228
+    Anchors = [akTop, akLeft, akRight]
+    BevelOuter = bvNone
+    ClientHeight = 40
+    ClientWidth = 1228
+    Color = clBlue
+    ParentColor = False
+    TabOrder = 4
+    object btSimpan: TBitBtn
+      Left = 16
+      Height = 30
+      Top = 5
+      Width = 75
+      Caption = 'Simpan'
+      OnClick = btSimpanClick
+      TabOrder = 0
+    end
+    object btBatal: TBitBtn
+      Left = 93
+      Height = 30
+      Top = 5
+      Width = 75
+      Caption = 'Batal'
+      OnClick = btBatalClick
+      TabOrder = 1
+    end
+    object btKeluar: TBitBtn
+      Left = 248
+      Height = 30
+      Top = 5
+      Width = 75
+      Caption = 'Keluar'
+      OnClick = btKeluarClick
+      TabOrder = 2
+    end
+  end
+  object edkodepembiayaan: TEdit
+    Left = 128
+    Height = 23
+    Top = 97
+    Width = 112
+    MaxLength = 12
+    OnChange = edkodepembiayaanChange
+    OnKeyPress = edkodepembiayaanKeyPress
+    TabOrder = 5
+    Text = 'edkodepembiayaan'
+  end
+  object ednamapembiayaan: TEdit
+    Left = 128
+    Height = 23
+    Top = 123
+    Width = 240
+    Color = clGradientActiveCaption
+    ReadOnly = True
+    TabOrder = 6
+    Text = 'ednamapembiayaan'
+  end
+  object Label6: TLabel
+    Left = 399
+    Height = 15
+    Top = 48
+    Width = 73
+    Caption = 'Jangka Waktu'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 399
+    Height = 15
+    Top = 74
+    Width = 87
+    Caption = 'Tgl Jatuh Tempo'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 565
+    Height = 15
+    Top = 48
+    Width = 30
+    Caption = 'Bulan'
+    ParentColor = False
+  end
+  object tgljt: TDateTimePicker
+    Left = 509
+    Height = 23
+    Top = 71
+    Width = 66
+    CenturyFrom = 1941
+    DateDisplayOrder = ddoDMY
+    MaxDate = 2958465
+    MinDate = -53780
+    ReadOnly = True
+    TabOrder = 7
+    Color = clGradientActiveCaption
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmNone
+    Date = 43377
+    Time = 0.560933530090551
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object Label9: TLabel
+    Left = 399
+    Height = 15
+    Top = 22
+    Width = 65
+    Caption = 'Pembiayaan'
+    ParentColor = False
+  end
+  object edplapon: TCurrencyEdit
+    Left = 509
+    Height = 23
+    Top = 19
+    Width = 144
+    Alignment = taRightJustify
+    DisplayFormat = ',0.00;-,0.00'
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 8
+    Value = 0
+    ZeroEmpty = False
+    OnChange = edplaponChange
+    OnKeyPress = edplaponKeyPress
+  end
+  object Label10: TLabel
+    Left = 399
+    Height = 15
+    Top = 100
+    Width = 87
+    Caption = 'Angsuran Pokok'
+    ParentColor = False
+  end
+  object edpokok: TCurrencyEdit
+    Left = 509
+    Height = 23
+    Top = 97
+    Width = 144
+    Alignment = taRightJustify
+    Color = clGradientActiveCaption
+    DisplayFormat = ',0.00;-,0.00'
+    MaxValue = 0
+    MinValue = 0
+    ReadOnly = True
+    TabOrder = 9
+    Value = 0
+    ZeroEmpty = False
+  end
+  object edbasil: TCurrencyEdit
+    Left = 509
+    Height = 23
+    Top = 123
+    Width = 144
+    Alignment = taRightJustify
+    Color = clGradientActiveCaption
+    DisplayFormat = ',0.00;-,0.00'
+    MaxValue = 0
+    MinValue = 0
+    ReadOnly = True
+    TabOrder = 10
+    Value = 0
+    ZeroEmpty = False
+    OnKeyPress = edbasilKeyPress
+  end
+  object Label11: TLabel
+    Left = 399
+    Height = 15
+    Top = 126
+    Width = 106
+    Caption = 'Angsuran Bagi Hasil'
+    ParentColor = False
+  end
+  object edjwaktu: TCurrencyEdit
+    Left = 509
+    Height = 23
+    Top = 45
+    Width = 51
+    Alignment = taRightJustify
+    DecimalPlaces = 0
+    DisplayFormat = '0'
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 11
+    Value = 0
+    ZeroEmpty = False
+    OnExit = edjwaktuExit
+    OnKeyPress = edjwaktuKeyPress
+  end
+  object Label12: TLabel
+    Left = 672
+    Height = 15
+    Top = 48
+    Width = 57
+    Caption = 'Biaya Adm'
+    ParentColor = False
+  end
+  object edbiaya: TCurrencyEdit
+    Left = 766
+    Height = 23
+    Top = 45
+    Width = 144
+    Alignment = taRightJustify
+    DisplayFormat = ',0.00;-,0.00'
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 12
+    Value = 0
+    ZeroEmpty = False
+    OnKeyPress = edbiayaKeyPress
+  end
+  object Label13: TLabel
+    Left = 672
+    Height = 15
+    Top = 22
+    Width = 80
+    Caption = 'Total Angsuran'
+    ParentColor = False
+  end
+  object edtotal: TCurrencyEdit
+    Left = 766
+    Height = 23
+    Top = 19
+    Width = 144
+    Alignment = taRightJustify
+    Color = clGradientActiveCaption
+    DisplayFormat = ',0.00;-,0.00'
+    MaxValue = 0
+    MinValue = 0
+    ReadOnly = True
+    TabOrder = 13
+    Value = 0
+    ZeroEmpty = False
+    OnKeyPress = edbasilKeyPress
+  end
+end

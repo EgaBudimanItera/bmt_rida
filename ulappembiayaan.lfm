@@ -1,0 +1,123 @@
+object flappembiayaan: Tflappembiayaan
+  Left = 272
+  Height = 360
+  Top = 157
+  Width = 858
+  Caption = 'flappembiayaan'
+  ClientHeight = 360
+  ClientWidth = 858
+  KeyPreview = True
+  OnShow = FormShow
+  LCLVersion = '5.7'
+  object Panel1: TPanel
+    Left = 0
+    Height = 104
+    Top = 0
+    Width = 858
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 104
+    ClientWidth = 858
+    Color = clHighlight
+    ParentColor = False
+    TabOrder = 0
+    object btCetak: TBitBtn
+      Left = 520
+      Height = 30
+      Top = 63
+      Width = 75
+      Caption = 'Cetak'
+      OnClick = btCetakClick
+      TabOrder = 0
+    end
+    object btKeluar: TBitBtn
+      Left = 680
+      Height = 30
+      Top = 63
+      Width = 75
+      Caption = 'Keluar'
+      OnClick = btKeluarClick
+      TabOrder = 1
+    end
+    object btLihat: TBitBtn
+      Left = 440
+      Height = 30
+      Top = 63
+      Width = 75
+      Caption = 'Lihat'
+      OnClick = btLihatClick
+      TabOrder = 2
+    end
+    object Label1: TLabel
+      Left = 16
+      Height = 15
+      Top = 16
+      Width = 68
+      Caption = 'No Rekening'
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+    end
+    object ednorek: TEdit
+      Left = 92
+      Height = 23
+      Top = 15
+      Width = 148
+      MaxLength = 12
+      OnChange = ednorekChange
+      OnKeyPress = ednorekKeyPress
+      TabOrder = 3
+      Text = 'ednorek'
+    end
+    object ednama: TEdit
+      Left = 92
+      Height = 23
+      Top = 42
+      Width = 320
+      Color = clGradientActiveCaption
+      ReadOnly = True
+      TabOrder = 4
+      Text = 'ednama'
+    end
+    object edalamat: TEdit
+      Left = 92
+      Height = 23
+      Top = 69
+      Width = 320
+      Color = clGradientActiveCaption
+      ReadOnly = True
+      TabOrder = 5
+      Text = 'edalamat'
+    end
+    object Label2: TLabel
+      Left = 16
+      Height = 15
+      Top = 43
+      Width = 32
+      Caption = 'Nama'
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 16
+      Height = 15
+      Top = 71
+      Width = 38
+      Caption = 'Alamat'
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object frPreview1: TfrPreview
+    Left = 0
+    Height = 256
+    Top = 104
+    Width = 858
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 1
+    ScrollBars = ssBoth
+  end
+end

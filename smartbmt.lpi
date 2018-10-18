@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="smartbmt"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="8">
+      <Item1>
+        <PackageName Value="pl_excontrols"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="lz_report"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="pl_rx"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="pl_solutions"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="lz_datetimectrls"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="FCL"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="pl_zeosdbo"/>
+      </Item7>
+      <Item8>
+        <PackageName Value="LCL"/>
+      </Item8>
+    </RequiredPackages>
+    <Units Count="23">
+      <Unit0>
+        <Filename Value="smartbmt.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="usmartbmt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fsmartbmt"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="ureganggota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="freganggota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="usettingsimpanan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fsettingsimpanan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="uregsimpanan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fregsimpanan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="ucarianggota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fcarianggota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="ucarisimpanan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fcarisimpanan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="utranssimpanan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ftranssimpanan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="ucariregsimpanan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fcariregsimpanan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="ulapanggota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="flapanggota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="ulapsimpanan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="flapsimpanan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="upembiayaan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fpembiayaan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="uregpembiayaan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fregpembiayaan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="ucaripembiayaan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fcaripembiayaan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="utranspembiayaan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ftranspembiayaan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="ucariregpembiayaan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fcariregpembiayaan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="ulappembiayaan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="flappembiayaan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="uoutstandingsimbi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="foutstandingsimbi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="ucashflow.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fcashflow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="ubasil.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fbasil"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="uscreen.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fscreen"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="umuser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fmuser"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="upendapatan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fpendapatan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit22>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="smartbmt"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
