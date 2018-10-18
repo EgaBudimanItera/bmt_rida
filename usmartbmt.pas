@@ -72,6 +72,7 @@ type
     procedure eduserKeyPress(Sender: TObject; var Key: char);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
     procedure pembukaanpembiayaanClick(Sender: TObject);
     procedure pendapatanClick(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
@@ -170,6 +171,11 @@ begin
   eduser.Text := '';
   edpass.Text := '';
   eduser.SetFocus;
+end;
+
+procedure Tfsmartbmt.Image1Click(Sender: TObject);
+begin
+
 end;
 
 procedure Tfsmartbmt.FormCreate(Sender: TObject);
