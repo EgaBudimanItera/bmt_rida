@@ -24,7 +24,6 @@ type
     frReport1: TfrReport;
     login: TGroupBox;
     Image1: TImage;
-    Image2: TImage;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
